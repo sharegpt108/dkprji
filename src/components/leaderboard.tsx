@@ -68,6 +68,7 @@ export function Leaderboard({ pledges, onClear }: LeaderboardProps) {
       topPledges.map((p, i) => ({
         Rank: i + 1,
         'Pledger Name': p.name,
+        'Mobile': p.mobile,
         Facilitator: p.facilitator,
         Count: p.count,
         Timestamp: new Date(p.timestamp).toLocaleString(),
