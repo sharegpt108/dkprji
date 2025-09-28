@@ -51,6 +51,12 @@ const nextConfig: NextConfig = {
         hostname: 'iskconpilkhuwa.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'storage2.me-qr.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },

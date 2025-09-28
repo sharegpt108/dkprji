@@ -87,10 +87,10 @@ export default function Home() {
     <div
       className="flex min-h-screen flex-col bg-cover bg-center bg-fixed transition-all duration-500"
       style={{
-        backgroundImage: `linear-gradient(rgba(44, 62, 80, 0.3), rgba(44, 62, 80, 0.3)), url(/maxresdefault.jpg)`,
+        backgroundImage: `linear-gradient(rgba(44, 62, 80, 0.3), rgba(44, 62, 80, 0.3)), url(/maxresdefault.jpgk)`,
       }}
     >
-      <header className="container mx-auto px-4 py-6 flex items-center justify-between">
+      <header className="container mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-4">
           <Image
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOBf_MsmDQGH4XiE4uE_Ms8WOy742dwPvhmA&s"
@@ -101,14 +101,14 @@ export default function Home() {
           />
         </div>
         <div className="text-center">
-          <h1 className="font-headline text-5xl font-bold tracking-tight text-white md:text-6xl">
+          <h1 className="font-headline text-4xl sm:text-5xl font-bold tracking-tight text-white md:text-6xl">
             UDGAAR Live Pledge
           </h1>
-          <p className="mt-2 text-lg text-primary-foreground/80">
+          <p className="mt-2 text-md sm:text-lg text-primary-foreground/80">
             Join the Movement, Pledge Now
           </p>
         </div>
-        <div>
+        <div className='hidden md:block'>
            <Image
             src="https://yt3.googleusercontent.com/Opk8F8nCjIbNo-8tKi2rJugBYUwqwvnc-adshczH16Px6DSgOMEpc49PFPEF-siSToskEBWC2dE=s900-c-k-c0x00ffffff-no-rj"
             alt="Iskcon Logo"
@@ -132,12 +132,12 @@ export default function Home() {
                 <DialogTrigger asChild>
                   <div className="w-full max-w-lg mx-auto">
                     <Card className="bg-card/50 backdrop-blur-sm border-white/10">
-                      <div className="p-12 flex justify-center">
+                      <div className="p-6 sm:p-12 flex justify-center items-center gap-4 sm:gap-8">
                         <Button
                           size="lg"
-                          className="bg-accent hover:bg-accent/90 text-accent-foreground text-xl py-8 px-10"
+                          className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg sm:text-xl py-6 sm:py-8 px-8 sm:px-10"
                         >
-                          <Handshake className="mr-4 h-8 w-8" />
+                          <Handshake className="mr-2 sm:mr-4 h-6 w-6 sm:h-8 sm:w-8" />
                           Make a Pledge
                         </Button>
                       </div>
