@@ -87,7 +87,7 @@ export default function Home() {
     <div
       className="flex min-h-screen flex-col bg-cover bg-center bg-fixed transition-all duration-500"
       style={{
-        backgroundImage: `linear-gradient(rgba(44, 62, 80, 0.3), rgba(44, 62, 80, 0.3)), url(${placeholderImages[0].imageUrl})`,
+        backgroundImage: `linear-gradient(rgba(44, 62, 80, 0.3), rgba(44, 62, 80, 0.3)), url(/maxresdefault.jpg)`,
       }}
     >
       <header className="container mx-auto px-4 py-6 flex items-center justify-between">
